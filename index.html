@@ -1573,6 +1573,7 @@ window.__QUESTIONS__ = [{"id":"ointments_1","topicId":"ointments","topicName":"O
     var preservedFreeTrialQuestionIds = Array.isArray(state.freeTrialQuestionIds)
       ? state.freeTrialQuestionIds.slice()
       : [];
+    
 
     state = defaultState();
     state.accessPlan = preservedAccessPlan;
@@ -1619,10 +1620,10 @@ window.__QUESTIONS__ = [{"id":"ointments_1","topicId":"ointments","topicName":"O
         '<div class="card pad manual-section">' +
 
           '<h2 class="section-title">User Manual</h2>' +
-          '<p class="section-sub">Dosage Forms Q-Bank — a NAPLEX self-assessment tool covering ' + QUESTIONS.length + ' questions across 12 dosage-form topics. This page is a quick-reference version of the full manual, built into the app.</p>' +
+          '<p class="section-sub">Dosage Forms Q-Bank — A comprehensive dosage-form question bank developed to support pharmacy students in preparing for the licensure examination. It covers ' + QUESTIONS.length + ' questions across 12 dosage-form topics. This page is a quick-reference version of the full manual, built into the app.</p>' +
 
           '<h3 id="overview" class="mh">1. Overview</h3>' +
-          '<p>This app is a self-assessment tool built to help PharmD students prepare for the NAPLEX. It covers twelve dosage-form topics with ' + QUESTIONS.length + ' questions in total, spanning standard multiple-choice, patient-vignette case studies, and pharmacy calculations.</p>' +
+          '<p>This app is an independent self-assessment and study tool designed to help PharmD students strengthen their knowledge of dosage forms and prepare for pharmacist licensure examinations. It covers twelve dosage-form topics with ' + QUESTIONS.length + ' questions in total, spanning standard multiple-choice, patient-vignette case studies, and pharmacy calculations.</p>' +
           '<p>The entire application lives in a single HTML file — nothing to install, no account, and no internet connection required after download. Your quiz history and performance statistics save automatically in your browser\u2019s local storage, so progress persists between sessions on the same device and browser.</p>' +
           '<div class="note-box"><h4>Before you begin</h4><p>Because progress is stored locally in your browser, it will not follow you to a different computer or browser automatically, and clearing your browser data will erase it. See the FAQ below for details.</p></div>' +
           '<h4 class="mh4">What\u2019s in the question bank</h4>' +
@@ -1641,7 +1642,7 @@ window.__QUESTIONS__ = [{"id":"ointments_1","topicId":"ointments","topicName":"O
           '<p>You can switch between tabs at any time, except mid-quiz, where switching tabs will prompt a confirmation since it ends your current attempt.</p>' +
 
           '<h3 id="dashboard-help" class="mh">3. The Dashboard</h3>' +
-          '<h4 class="mh4">NAPLEX readiness score</h4>' +
+          '<h4 class="mh4">Licensure exam readiness score</h4>' +
           '<p>A single 0\u2013100 score combining two things: <strong>Accuracy</strong> (75% of the score) \u2014 the percentage of attempted questions you\u2019ve answered correctly \u2014 and <strong>Coverage</strong> (25% of the score) \u2014 the percentage of the full question bank you\u2019ve attempted at least once. This weighting means a high score requires both consistent accuracy and broad exposure across the bank.</p>' +
           '<h4 class="mh4">Topic breakdown &amp; mastery badges</h4>' +
           '<div style="overflow-x:auto;">' + '<table class="manual-table"><thead><tr><th>Badge</th><th>Meaning</th></tr></thead><tbody>' +
@@ -1663,7 +1664,7 @@ window.__QUESTIONS__ = [{"id":"ointments_1","topicId":"ointments","topicName":"O
           '<tr><td>Final Exam</td><td>Withheld until quiz ends</td><td>Always all 12 topics</td><td>Full-length, comprehensive simulation</td></tr>' +
           '</tbody></table>' + '</div>' +
           '<p>Adaptive Mode selects questions using a weighted algorithm that favors questions you haven\u2019t seen yet, questions you\u2019ve previously answered incorrectly, and topics where your overall accuracy is lower.</p>' +
-          '<div class="note-box amber"><h4>About Final Exam Mode</h4><p>Final Exam mirrors the real NAPLEX: a long, mixed-topic assessment with no mid-test feedback. Because it always draws from all 12 topics, the topic picker is replaced with a single-select <strong>Level</strong> control (All Levels / Easy / Medium / Hard).</p></div>' +
+          '<div class="note-box amber"><h4>About Final Exam Mode</h4><p>Final Exam Mode provides a comprehensive, mixed-topic assessment designed to simulate the experience of a pharmacist licensure examination. It includes questions from all 12 topics; the topic picker is replaced with a single-select <strong>Level</strong> control (All Levels / Easy / Medium / Hard).</p></div>' +
           '<h4 class="mh4">Topics, difficulty, question type &amp; count</h4>' +
           '<p>For Practice, Exam, and Adaptive modes, choose any combination of the 12 topics and any combination of Easy/Medium/Hard difficulty (at least one of each must stay selected). The Question Type control filters by <strong>Standard</strong> (single-best-answer), <strong>Case-Based</strong> (patient vignettes), or <strong>Calculations</strong> (pharmacy math) \u2014 any combination, at least one active. A slider sets how many questions the quiz contains, bounded by how many match your current filters. Click \u201cStart Quiz\u201d once at least one question matches.</p>' +
 
@@ -1690,7 +1691,7 @@ window.__QUESTIONS__ = [{"id":"ointments_1","topicId":"ointments","topicName":"O
           '<dt>Does this app require an internet connection?</dt><dd>No, once downloaded. The one exception is the display font, which loads from Google Fonts if available; offline, the app falls back to your system font with no loss of functionality.</dd>' +
           '</dl>' +
 
-          '<div class="note-box"><h4>A note on scope</h4><p>This tool is a self-assessment aid, not a substitute for your program\u2019s official NAPLEX preparation materials or board-approved review courses. Use it to identify weak areas and reinforce recall alongside your primary coursework.</p></div>' +
+          '<div class="note-box"><h4>A note on scope</h4><p>This tool is a self-assessment aid, not a substitute for your program\u2019s official NAPLEX preparation materials or professional review resources. Use it to identify weak areas and reinforce recall alongside your primary coursework.</p></div>' +
 
           '<h3 id="disclaimer" class="mh">9. Disclaimer</h3>' +
           '<p>Dosage Forms Q-Bank is an independent, unofficial study aid. It is <strong>not produced, reviewed, endorsed, or affiliated with the National Association of Boards of Pharmacy (NABP)</strong> or any organization that administers the NAPLEX, and \u201cNAPLEX\u201d is referenced solely to describe the exam this tool is intended to help you prepare for.</p>' +
